@@ -264,7 +264,7 @@ class Registry:
         return None
 
     def list_images(self):
-        result = self.send('/v2/_catalog?n=10000')
+        result = self.send('/v2/_catalog?n=1000')
         if result is None:
             return []
 
